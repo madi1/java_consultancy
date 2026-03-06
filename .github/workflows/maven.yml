@@ -1,5 +1,7 @@
 yaml
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch: # This line adds the manual button
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21' # <--- Change this to 21
+          distribution: 'temurin'
+          cache: maven
