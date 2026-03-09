@@ -11,7 +11,29 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * REST Controller for Madi Consultancy Services.
  * This class acts as the API bridge for the Angular frontend.
- */
+ */package com.madi.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import java.util.Map;
+import java.util.HashMap;
+
+@RestController
+@RequestMapping("/api/consultancy")
+@CrossOrigin(origins = "*") // Allows Angular to talk to Java
+public class ConsultancyController {
+
+    @GetMapping
+    public Map<String, String> getConsultancyData() {
+        Map<String, String> data = new HashMap<>();
+        data.add("message", "Welcome to Madi Consultancy!");
+        data.add("status", "Backend Connected");
+        return data;
+    }
+}
+
 @RestController
 @RequestMapping("/api")
 /* 
