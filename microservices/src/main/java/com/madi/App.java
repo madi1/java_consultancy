@@ -1,5 +1,8 @@
 package com.madi;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +16,9 @@ public class App {
     }
 
     @GetMapping("/")
-    public String home() {
-        return "Madi Consultancy Java Service is Live on Azure!";
+    public Map<String,String> home() {
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "Madi Consultancy Java Service is Live on Azure!");
+        return response;
     }
 }

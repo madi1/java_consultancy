@@ -13,8 +13,10 @@ import java.util.HashMap;
 public class ConsultancyController {
 
     @GetMapping
-    public Map<String, String> getConsultancyData() {
+    public Map<String, String> getConsultancyDataonsultancyData() {
         Map<String, String> data = new HashMap<>();
+        // Example string payload the front end can consume
+        data.put("payload", "my name is ABC");
         data.put("message", "Welcome to Madi Consultancy!");
         data.put("status", "Backend Connected");
         return data;
