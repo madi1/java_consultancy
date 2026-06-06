@@ -11,7 +11,7 @@ export class Imports {
   readonly imports = [
     {
       title: 'Hi-Tech Software and Hardware',
-      detail: 'Importing of Bulldozers, Excavators, and other heavy machinery.',
+      detail: 'Importing of Hi-Tech Software, Hardware and Cyber Security Solutions.',
     },
     {
       title: 'Engineering Machinery Imports',
