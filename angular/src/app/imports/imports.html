@@ -1,0 +1,11 @@
+<section class="imports-page">
+  <h2>Imports</h2>
+  <p class="lead">Almadi Imports is a division of Almadi Tech Trade for General Imports</p>
+
+  <div class="imports-grid">
+    <article class="import-card" *ngFor="let item of imports">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.detail }}</p>
+    </article>
+  </div>
+</section>

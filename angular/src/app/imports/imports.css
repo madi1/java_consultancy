@@ -1,0 +1,42 @@
+.imports-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.imports-page h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.lead {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.imports-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.import-card {
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.import-card h3 {
+  margin: 0 0 0.5rem;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.import-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.5;
+}
