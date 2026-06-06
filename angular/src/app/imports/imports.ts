@@ -10,7 +10,7 @@ import { NgFor } from '@angular/common';
 export class Imports {
   readonly imports = [
     {
-      title: 'Hi-Tech Software and Hardware',
+      title: 'Software and Hardware',
       detail: 'Importing of Hi-Tech Software, Hardware and Cyber Security Solutions.',
     },
     {
