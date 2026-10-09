@@ -15,7 +15,7 @@ export class App {
   protected readonly backendStatus = signal('idle');
 
   constructor() {
-    this.loadBackendData();
+    //madi: this.loadBackendData(); // comment out to prevent starting the backend Java API
   }
 
   protected async loadBackendData() {
